@@ -1,11 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Anton-Font";
+  src: url("../assets/fonts/Anton-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AzeretMono-Font";
+  src: url("../assets/fonts/AzeretMono.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #4d4d4d;
@@ -19,6 +31,10 @@ body {
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image */
   background-attachment: fixed; /* Keep the image fixed in place */
+
+  font-family: "azertomono-font", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
 }
 
 code {
@@ -26,13 +42,10 @@ code {
     monospace;
 }
 
-@font-face {
-  font-family: "Anton-Font";
-  src: url("../assets/fonts/Anton-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .anton-font {
   font-family: "Anton-Font", sans-serif;
+}
+
+.azertomono-font {
+  font-family: "AzeretMono-Font", sans-serif;
 }
