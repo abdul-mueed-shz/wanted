@@ -49,3 +49,11 @@ code {
 .azertomono-font {
   font-family: "AzeretMono-Font", sans-serif;
 }
+
+.color_gray_rgb102 {
+  color: rgb(102, 102, 102);
+}
+
+.border-radius__3pxSolidAppGray {
+  border: 3px solid #4d4d4d;
+}
