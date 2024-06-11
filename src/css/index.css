@@ -57,3 +57,27 @@ code {
 .border-radius__3pxSolidAppGray {
   border: 3px solid #4d4d4d;
 }
+
+.tilt-left {
+  transform: perspective(1200px) translateX(0px) translateY(0px) scale(1)
+    rotate(-2deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg)
+    translateZ(0px);
+}
+
+.tilt-right {
+  transform: perspective(1200px) translateX(0px) translateY(0px) scale(1)
+    rotate(1deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg)
+    translateZ(0px);
+}
+
+.bg-color__hex4d4d4d {
+  background-color: #4d4d4d;
+}
+
+.text-color__hex4d4d4d {
+  color: #f1e9da;
+}
+
+.border-top__2pxDashed {
+  border-top: 2px dashed;
+}
