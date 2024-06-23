@@ -1,3 +1,43 @@
+# 🖥️ Mikhail Petrovski - Portfolio
+
+Welcome to Mikhail Petrovski's professional portfolio! This project showcases my skills and experience as a dynamic product designer. Explore my work, learn about my background, and discover how I can help bring creative ideas to life.
+
+![image](https://github.com/abdul-mueed-shz/wanted/assets/52679916/d838dc54-b31d-4b0e-96fd-c8446d1190e2)
+
+## 🚀 Features
+
+- **Interactive Contact Form**: Reach out to me directly through the sleek and intuitive contact form.
+- **Responsive Design**: Optimized for all devices, ensuring a seamless experience on desktops, tablets, and smartphones.
+- **Projects Showcase**: A curated collection of my best projects, highlighting my skills in web design, UI/UX, and graphic design.
+- **Testimonials**: Real feedback from clients and colleagues, showcasing my dedication and impact in the field.
+- **Dynamic Data Handling**: Efficiently managed data using modern React libraries and hooks.
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React, Tailwind CSS
+- **Forms and Validation**: react-hook-form, DOMPurify
+- **Icons**: react-icons
+- **Styling**: Tailwind CSS for rapid and responsive design
+- **Deployment**: Deployed on a modern web hosting platform
+
+## 📂 Project Structure
+
+```plaintext
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── ContactForm.js
+│   │   └── ...
+│   ├── data
+│   │   └── details.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
