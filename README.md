@@ -1,4 +1,4 @@
-# 🖥️ Mikhail Petrovski - Portfolio
+# 🖥️ Abdul's Wanted - Portfolio
 
 Welcome to Mikhail Petrovski's professional portfolio! This project showcases my skills and experience as a dynamic product designer. Explore my work, learn about my background, and discover how I can help bring creative ideas to life.
 
