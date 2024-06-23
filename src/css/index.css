@@ -81,3 +81,20 @@ code {
 .border-top__2pxDashed {
   border-top: 2px dashed;
 }
+
+.icon-container {
+  background-color: #4d4d4d;
+  display: inline-block;
+  padding: 8px;
+  transition: transform 0.3s; /* Smooth transition for the rotation */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.icon-container:hover {
+  transform: rotate(10deg); /* Rotate the icon on hover */
+}

@@ -1,44 +1,72 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { renderToString } from "react-dom/server";
 import DOMPurify from "dompurify";
 
-export default function InfoCard() {
+const InfoCard = ({ title = "", infoList = [], titleDetails = "" }) => {
   return (
     <section className="pb-8 my-14 App-header opacity-100 border-top__2pxDashed max-w-718px">
-      <div id="heading" className="pt-10 text-3xl font-medium">
-        Experience
-      </div>
-      <div className="container">
+      {title && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
-          <div id="topic">
-            <div className="text-3xl font-semibold">About</div>
-            <div className="pt-2">
-              <div className="text-lg font-medium">Innovate Tech Inc</div>
-              <div className="text-lg font-medium">2020 - present</div>
-            </div>
+          <div
+            id="heading"
+            className="text-3xl font-medium col-span-2 md:col-span-1"
+          >
+            {title}
           </div>
           <div
             id="details"
             className="dynamic-content text-lg font-medium col-span-1"
             dangerouslySetInnerHTML={{
-              __html: DOMPurify.sanitize(
-                renderToString(
-                  <p>
-                    Mikhail Petrovski is a dynamic product designer known for
-                    his passion and creativity in translating innovative ideas
-                    into tangible, user-centric designs. With a sharp eye for
-                    detail and a commitment to pushing the boundaries of
-                    innovation, he consistently delivers market-leading
-                    solutions that seamlessly blend aesthetics and
-                    functionality. Petrovski's track record highlights his
-                    ability to transform abstract concepts into compelling and
-                    cutting-edge products.
-                  </p>
-                )
-              ),
+              __html: DOMPurify.sanitize(renderToString(titleDetails)),
             }}
           />
         </div>
+      )}
+      <div className="container">
+        {infoList.length > 0 &&
+          infoList.map(({ topicId, topic, locale, era, details }, index) => (
+            <div
+              key={topicId ?? index}
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10"
+            >
+              <div id="topic">
+                {topic && <div className="text-2xl font-semibold">{topic}</div>}
+                <div className="pt-2">
+                  {locale && (
+                    <div className="text-lg font-medium">{locale}</div>
+                  )}
+                  {era && <div className="text-lg font-medium">{era}</div>}
+                </div>
+              </div>
+              {details && (
+                <div
+                  id="details"
+                  className="dynamic-content font-medium col-span-1"
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(renderToString(details)),
+                  }}
+                />
+              )}
+            </div>
+          ))}
       </div>
     </section>
   );
-}
+};
+
+InfoCard.propTypes = {
+  title: PropTypes.string,
+  titleDetails: PropTypes.node,
+  infoList: PropTypes.arrayOf(
+    PropTypes.shape({
+      topicId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      topic: PropTypes.string,
+      locale: PropTypes.string,
+      era: PropTypes.string,
+      details: PropTypes.node,
+    })
+  ),
+};
+
+export default InfoCard;

@@ -1,3 +1,40 @@
 .App-background {
   min-height: 100vh;
 }
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.dynamic-content {
+  /* Add any specific styles for dynamically injected content */
+}
+
+.dynamic-content ul,
+.dynamic-content ol {
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+.dynamic-content li {
+  margin-bottom: 0.5em;
+}
+
+.custom-ol {
+  list-style-type: none; /* Remove default list numbering */
+  padding-left: 1.5em; /* Add padding to make space for custom markers */
+  margin: 0;
+}
+
+.custom-ol li {
+  position: relative;
+  padding-left: 1.5em; /* Add padding to make space for custom markers */
+  margin-bottom: 0.5em;
+}
+
+.custom-ol li::before {
+  content: ""; /* Content is empty because we're adding a custom shape */
+  position: absolute;
+  left: 0;
+  top: 0.5em; /* Adjust the position to vertically center the marker */
+  width: 0.5em; /* Customize the size of the marker */
+  height: 0.5em; /* Customize the size of the marker */
+  border-radius: 50%; /* Make the marker a circle */
+  background-color: #4d4d4d; /* Customize the color of the marker */
+}
