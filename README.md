@@ -1,6 +1,6 @@
 # 🖥️ Abdul's Wanted - Portfolio
 
-Welcome to Mikhail Petrovski's professional portfolio! This project showcases my skills and experience as a dynamic product designer. Explore my work, learn about my background, and discover how I can help bring creative ideas to life.
+Welcome to Abdul's professional portfolio! This project showcases my skills and experience as a dynamic software engineer. Explore my work, learn about my background, and discover how I can help bring creative ideas to life.
 
 ![image](https://github.com/abdul-mueed-shz/wanted/assets/52679916/d838dc54-b31d-4b0e-96fd-c8446d1190e2)
 
