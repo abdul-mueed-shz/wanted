@@ -3,6 +3,8 @@ import profilePicture from "../../assets/images/user/profilePicture.jpg";
 import InfoCard from "../info/InfoCard";
 import { DATA } from "../../data/details";
 import RatingCard from "../rating/RatingCard";
+import CopyRight from "../copyright/CopyRight";
+import ContactForm from "../contact/ContactForm";
 
 function App() {
   const {
@@ -46,6 +48,8 @@ function App() {
         <InfoCard title={"Services"} titleDetails={SERVICES} />
         <RatingCard title={"Stack"} skillsList={SKILLS} />
         <InfoCard title={"Witnesses Statements"} infoList={TESTIMONIALS} />
+        <ContactForm />
+        <CopyRight copyRightDate="Copyright 2023" creator="Abdul Mueed" />
       </div>
     </div>
   );
