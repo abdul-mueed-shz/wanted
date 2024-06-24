@@ -99,4 +99,28 @@ export const DATA = Object.freeze({
       link: "https://ozzie.sh/passing-icons-as-props-in-a-consistent-way-using-react",
     },
   ],
+  CONTACT: {
+    DEFAULT_ICON_SIZE: 20,
+    TAGLINE: (
+      <p>
+        After thorough investigations, we have gathered more fascinating clues
+        about Abdul. Whether you want to connect with him professionally,
+        collaborate on an exciting project, or simply send a friendly message,
+        you’re in the right place. Check below for more details and feel free to
+        reach out!
+      </p>
+    ),
+    FORM_HEADING: "Have a Project Idea?",
+    SOCIAL_DETAILS: {
+      LINKEDIN: "https://ozzie.sh/",
+      GITHUB: "https://ozzie.sh/",
+      TWITTER: "https://ozzie.sh/",
+      STACKOVERFLOW: "https://ozzie.sh/",
+    },
+    CONTACT_DETAILS: {
+      EMAIL: "abdulmueedshahbaz@gmail.com",
+      PHONE: "+92-3234942960",
+      ADDRESS: "Islampura, Lahore",
+    },
+  },
 });

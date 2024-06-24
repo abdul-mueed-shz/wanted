@@ -17,6 +17,13 @@ function App() {
     SERVICES,
     TESTIMONIALS,
     SKILLS,
+    CONTACT: {
+      TAGLINE: CONTACT_TAGLINE,
+      FORM_HEADING,
+      DEFAULT_ICON_SIZE,
+      SOCIAL_DETAILS,
+      CONTACT_DETAILS,
+    },
   } = DATA;
   return (
     <div className="App-background">
@@ -46,10 +53,16 @@ function App() {
         <InfoCard title={"About"} titleDetails={ABOUT} />
         <InfoCard title={"Experience"} infoList={EXPERIENCE} />
         <InfoCard title={"Services"} titleDetails={SERVICES} />
-        <RatingCard title={"Stack"} skillsList={SKILLS} />
+        <RatingCard title={"Skills"} skillsList={SKILLS} />
         <InfoCard title={"Witnesses Statements"} infoList={TESTIMONIALS} />
-        <ContactForm />
-        <CopyRight copyRightDate="Copyright 2023" creator="Abdul Mueed" />
+        <ContactForm
+          tagline={CONTACT_TAGLINE}
+          heading={FORM_HEADING}
+          iconSize={DEFAULT_ICON_SIZE}
+          socialDetails={SOCIAL_DETAILS}
+          contactDetails={CONTACT_DETAILS}
+        />
+        <CopyRight copyRightDate={"Copyright 2023"} creator={NAME} />
       </div>
     </div>
   );

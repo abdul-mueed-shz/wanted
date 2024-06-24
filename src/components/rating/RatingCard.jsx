@@ -13,7 +13,7 @@ const RatingCard = ({ title = "", skillsList = [], titleDetails = "" }) => {
   };
 
   return (
-    <section className="pb-8 my-14 App-header opacity-100 border-top__2pxDashed max-w-718px">
+    <section className="pb-8 my-14 opacity-100 border-top__2pxDashed max-w-718px">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
         <div
           id="heading"
